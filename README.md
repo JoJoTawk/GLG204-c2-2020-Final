@@ -47,3 +47,8 @@ in future I will add Thymleaf so it can be accessed from the browser.
     
     Start/Stop mongo : brew services stop or start mongodb-community@4.4
 
+Some Annotations: 
+                
+    The @Accessors annotation is used to configure how lombok generates and looks for getters and setters. (LOMBORK) ~BIG-J Add website for LOMbork
+
+
