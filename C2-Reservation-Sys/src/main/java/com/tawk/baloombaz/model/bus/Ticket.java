@@ -1,5 +1,6 @@
 package com.tawk.baloombaz.model.bus;
 
+import com.tawk.baloombaz.model.user.User;
 import lombok.Setter;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -26,6 +27,6 @@ public class Ticket {
     @DBRef
     private TripSchedule tripSchedule;
 
-//    @DBRef
-//    private User passenger;
+    @DBRef
+    private User passenger;
 }

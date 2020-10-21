@@ -27,6 +27,10 @@ public class Bus {
     @Indexed(unique = true, direction = IndexDirection.DESCENDING)
     private String code;
 
+    public String getCode() {
+        return code;
+    }
+
     private int capacity;
 
     private String make;
