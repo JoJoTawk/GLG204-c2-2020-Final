@@ -1,4 +1,4 @@
-package com.tawk.baloombaz.model;
+package com.tawk.baloombaz.model.bus;
 
 import lombok.Getter;
 import lombok.NoArgsConstructor;

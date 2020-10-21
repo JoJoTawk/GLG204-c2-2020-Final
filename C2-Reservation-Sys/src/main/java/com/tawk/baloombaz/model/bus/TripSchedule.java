@@ -1,4 +1,4 @@
-package com.tawk.baloombaz.model;
+package com.tawk.baloombaz.model.bus;
 
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -8,23 +8,24 @@ import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.DBRef;
 import org.springframework.data.mongodb.core.mapping.Document;
 
+import java.util.List;
+
 @Getter
 @Setter
 @NoArgsConstructor
 @Accessors(chain = true)
-@Document(collection = "trip")
-public class Trip {
+@Document(collection = "tripschedule")
+public class TripSchedule {
     @Id
     private String id;
 
-    private int fare;
-
-    private int journeyTime;
-
     @DBRef
-    private Stop sourceStop;
+    private Trip tripDetail;
 
-    @DBRef
-    private Stop destStop;
+    @DBRef(lazy = true)
+    private List<Ticket> ticketsSold;
 
+    private String tripDate;
+
+    private int availableSeats;
 }
