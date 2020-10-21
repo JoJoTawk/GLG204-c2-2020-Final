@@ -1,0 +1,9 @@
+
+Mawjoudin bi class el services based a spring architecture
+
+Class userService
+
+Register a new user ----- > signup
+Search an existing user ----- > findUserByEmail
+Update profile of the user ----- > updateProfile
+Update password ----- > changePassword
