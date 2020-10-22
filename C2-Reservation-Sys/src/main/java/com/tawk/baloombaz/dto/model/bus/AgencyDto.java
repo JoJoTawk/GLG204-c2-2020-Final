@@ -2,6 +2,7 @@ package com.tawk.baloombaz.dto.model.bus;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonInclude;
+import com.tawk.baloombaz.dto.model.user.UserDto;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -20,7 +21,7 @@ import java.util.Set;
 public class AgencyDto {
     private String code;
 
-//    private UserDto owner;
+    private UserDto owner;
 
     private Set<BusDto> buses;
 

@@ -1,5 +1,6 @@
 package com.tawk.baloombaz.model.bus;
 
+import com.tawk.baloombaz.model.user.User;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -29,8 +30,8 @@ public class Agency {
 
     private String details;
 
-//    @DBRef(lazy = true)
-//    private User owner;
+    @DBRef(lazy = true)
+    private User owner;
 
     @DBRef(lazy = true)
     private Set<Bus> buses;

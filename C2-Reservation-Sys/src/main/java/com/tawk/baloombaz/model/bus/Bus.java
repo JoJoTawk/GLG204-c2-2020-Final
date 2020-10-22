@@ -33,6 +33,10 @@ public class Bus {
 
     private int capacity;
 
+    public int getCapacity() {
+        return capacity;
+    }
+
     private String make;
 
     private String email;
