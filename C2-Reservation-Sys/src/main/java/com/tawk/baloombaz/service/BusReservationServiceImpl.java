@@ -331,7 +331,7 @@ public class BusReservationServiceImpl implements BusReservationService {
         if (user != null) {
             Optional<TripSchedule> tripSchedule = tripScheduleRepository.findById(tripScheduleDto.getId());
             if (tripSchedule.isPresent()) {
-                Ticket ticket = new Ticket(
+                Ticket ticket = new Ticket()
                         .setCancellable(false)
                         .setJourneyDate(tripSchedule.get().getTripDate())
                         .setPassenger(user)

@@ -11,7 +11,7 @@ import com.tawk.baloombaz.repository.user.RoleRepository;
 import com.tawk.baloombaz.repository.user.UserRepository;
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+import org.springframework.security.crypto.bcrypt.*;
 import org.springframework.stereotype.Component;
 
 import com.tawk.baloombaz.exception.ExceptionType;

@@ -52,3 +52,4 @@ Some Annotations:
     The @Accessors annotation is used to configure how lombok generates and looks for getters and setters. (LOMBORK) ~BIG-J Add website for LOMbork
 
 
+    The @Order annotation allows the requests to be scanned through the different configurations in the specified order. So an API request goes through the ApiWebSecurityConfigurationAdapter and gets absorbed there, however an Admin request first goes through it but since it doesn’t match the criteria Spring Security tries to make it go through the next configuration with an immediate higher order which in this case is FormLoginWebSecurityConfigurerAdapter.
