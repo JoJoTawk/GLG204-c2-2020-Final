@@ -8,8 +8,8 @@
 		<version>2.3.3.RELEASE</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.starterkit.springboot</groupId>
-	<artifactId>springboot-starterkit</artifactId>
+	<groupId>com.tawk.baloombaz</groupId>
+	<artifactId>C2-Reservation-Sys</artifactId>
 	<version>1.0</version>
 	<name>springboot-starterkit</name>
 	<packaging>jar</packaging>
